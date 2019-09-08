@@ -79,7 +79,7 @@ module PagerApi
             total_pages: pagy.pages,
             total_objects: pagy.count,
             links: pagination_links(pagy),
-            page: (pagy.offset / pagy.items) + 1
+            page: pagy.page
           },
         }
       end
